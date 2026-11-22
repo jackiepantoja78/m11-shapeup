@@ -1,0 +1,80 @@
+/* Calorie Counter heading */
+main section h1 {
+  color: maroon;
+  text-align: center;
+}
+
+/* Large screen table */
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 15px auto;
+  background-color: white;
+  font-size: 0.9em;
+}
+
+thead {
+  background-color: steelblue;
+  color: white;
+}
+
+th {
+  background-color: steelblue;
+  color: white;
+  padding: 8px;
+  text-align: right;
+  border: none;
+}
+
+td {
+  background-color: white;
+  padding: 6px;
+  text-align: right;
+  border: none;
+}
+
+th.left,
+td.left {
+  text-align: left;
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  table {
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 0.9em;
+  }
+
+  thead {
+    display: none;
+  }
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  tbody tr {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  td {
+    padding: 3px 8px;
+    text-align: left;
+    border: none;
+    background-color: white;
+  }
+
+  td.left {
+    font-weight: bold;
+    color: maroon;
+  }
+}
